@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Елена Ордина](https://up.htmlacademy.ru/adaptive/15/user/512899).
-* Наставник: [Александр Уразаев] (https://htmlacademy.ru/profile/urazaev).
+* Наставник: [Александр Уразаев](https://htmlacademy.ru/profile/urazaev).
 
 ---
 
