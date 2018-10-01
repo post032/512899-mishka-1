@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Мишка</title>
+</head>
+
+<body>
+  <header class="page-header">
+    <a class="page-header__logo">
+        <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="88" height="38" alt="Мишка">
+      </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle main-nav__toggle--close" type="button">Открыть меню</button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Вязание на заказ</a>
+          </li>
+          <li class="site-list__item">
+            <span class="site-list__icon site-list__icon--search"></span>
+            <a href="#">Поиск по сайту</a>
+          </li>
+          <li class="site-list__item">
+            <span class="site-list__icon site-list__icon--basket"></span>
+            <a href="#">Корзина: пока пуста</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="page-main">
+    <section class="catalog">
+      <h1 class="catalog__title">Каталог товаров</h1>
+      <div class="catalog__item">
+        <img src="bunny.jpg" alt="Зайчик">
+        <h3>Зайчик-попрыгайчик</h3>
+        <p>Рост 30 см, вес 200 г</p>
+        <span class="catalog__line"></span>
+        <p>1 200 руб.</p>
+        <span class="catalog__icon"></span>
+      </div>
+      <div class="catalog__item">
+        <img src="basket.jpg" alt="Корзинка для белья">
+        <h3>Корзинка для белья</h3>
+        <p>РДиаметр 15 см, высота 10 см</p>
+        <span class="catalog__line"></span>
+        <p>690 руб.</p>
+        <span class="catalog__icon"></span>
+      </div>
+      <div class="catalog__item">
+        <img src="toyBasket.jpg" alt="Большая корзинка для игрушек">
+        <h3>Большая корзинка для игрушек</h3>
+        <p>Диаметр 30 см, высота 30 см</p>
+        <span class="catalog__line"></span>
+        <p>1 500 руб..</p>
+        <span class="catalog__icon"></span>
+      </div>
+    </section>
+    <section class="backStage">
+      <span class="backStage__icon"></span>
+      <h2>Процесс производства</h2>
+      <img src="video.jpg" alt="Процесс производства">
+      <p>По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+      <button class="button button__make" type="button" name="button">Сделать заказ</button>
+    </section>
+    <div class="modal">
+      <form class="" action="index.html" method="get">
+        <div class="modal__form">
+          <p><b>Добавить в корзину</b></p>
+          <p>Выберите размер:</p>
+          <ul>
+            <li>
+              <button class="button__size" type="button" name="button">S</button>
+            </li>
+            <li>
+              <button class="button__size" type="button" name="button">M</button>
+            </li>
+            <li>
+              <button class="button__size" type="button" name="button">L</button>
+            </li>
+          </ul>
+          <button class="button button__modal" type="button" name="button">Добавить</button>
+        </div>
+      </form>
+    </div>
+  </main>
+  <footer class="page-footer">
+    <section class="social__footer">
+      <h2 class="visually-hidden">Социальные сети</h2>
+      <img class="social__item" src="inst.svg" alt="инстаграмм">
+      <img class="social__item" src="facebook.svg" alt="фейсбук">
+      <img class="social__item" src="twitter.svg" alt="твиттер">
+    </section>
+    <section class="development__fooote">
+      <h2 class="visually-hidden">разработчики</h2>
+      <p>Разработано</p>
+      <img src="htmlAcademy.svg" alt="Академия HTML">
+    </section>
+  </footer>
+</body>
+
+</html>
