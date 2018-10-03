@@ -65,9 +65,9 @@
             <td class="goods__field">15 см</td>
           </tr>
         </table>
-        <img src="knittedBasket.jpg" alt="Вязаная корзина">
+        <img src="knittedbasket.jpg" alt="Вязаная корзина">
         <p>Цена: 990 руб.</p>
-        <button class="button button__order" type="button" name="button">ЗАКАЗАТЬ</button>
+        <a class="goods__link link" href="#">ЗАКАЗАТЬ</a>
       </div>
     </section>
     <section class="about-us">
@@ -94,7 +94,7 @@
       </p>
       <b class="comments__author">Анастасия Красильникова</b>
       <p class="comments__author__id">@misssssiskras</p>
-      <button class="button button__comments" type="button" name="button">Написать</button>
+      <a class="comments__link link" href="#">Написать</a>
     </section>
     <section class="contacts">
       <h2 class="contacts__title">Контакты</h2>
@@ -111,26 +111,6 @@
       <img class="contacts__map" src="map.jpg" alt="Карта">
       <button class="button button--contacts" type="button" name="button">Напишите нам</button>
     </section>
-    <div class="modal">
-      <form class="" action="https://echo.htmlacademy.ru" method="get">
-          <div class="modal__form">
-            <p><b>Добавить в корзину</b></p>
-            <p>Выберите размер:</p>
-            <ul>
-              <li>
-                <button class="button button__size" type="button" name="button">S</button>
-              </li>
-              <li>
-                <button class="button button__size" type="button" name="button">M</button>
-              </li>
-              <li>
-                <button class="button button__size" type="button" name="button">L</button>
-              </li>
-            </ul>
-            <a href="form.html">Добавить</a>
-          </div>
-        </form>
-    </div>
   </main>
   <footer class="page-footer">
     <section class="page-footer__social social">
@@ -142,9 +122,29 @@
     <section class="page-footer__copyright copyright">
       <h2 class="visually-hidden">разработчики</h2>
       <p>Разработано</p>
-      <img src="htmlAcademy.svg" alt="Академия HTML">
+      <img src="htmlacademy.svg" alt="Академия HTML">
     </section>
   </footer>
+  <div class="modal">
+    <form class="" action="https://echo.htmlacademy.ru" method="get">
+        <div class="modal__form">
+          <p><b>Добавить в корзину</b></p>
+          <p>Выберите размер:</p>
+          <ul>
+            <li>
+              <button class="button button__size" type="button" name="button">S</button>
+            </li>
+            <li>
+              <button class="button button__size" type="button" name="button">M</button>
+            </li>
+            <li>
+              <button class="button button__size" type="button" name="button">L</button>
+            </li>
+          </ul>
+          <a href="form.html">Добавить</a>
+        </div>
+      </form>
+  </div>
 </body>
 
 </html>
