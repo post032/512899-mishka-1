@@ -1,16 +1,31 @@
 
 .contacts {
   .indentm;
+  display: flex;
+  flex-direction: column;
+  min-height: 895px;
 }
 
 .contacts__title {
   .titlefont;
 }
-.contacts__map {
+/*.contacts__map {
   background: url("../img/map-mobile@1x.jpg") no-repeat top;
   height: 457px;
-}
+}*/
 
 .contacts__link {
   .text-button;
+}
+
+@media (min-width: @size-tablet) {
+  .contacts {
+    min-height: 927px;
+  }
+}
+
+@media (min-width: @size-desktop) {
+  .contacts {
+    min-height: 633px;
+  }
 }

@@ -1,20 +1,19 @@
 .goods-week {
+  min-height: 826px;
+  display: flex;
+  flex-direction: column;
   .indentm;
 }
 
 .goods-week__item {
   .titlefont;
+  font-size: 15px;
+  line-height: 24px;
 }
 
 .goods-week__title {
   font-size: 17px;
   line-height: 20px;
-}
-
-
-.goods-week__item {
-  font-size: 15px;
-  line-height: 24px;
 }
 
 .goods-week__field,
@@ -28,14 +27,26 @@
   line-height: 24px;
 }
 
-.goods-week__title--green,
-.goods-week__item--grey,
-.goods-week__value--grey,
 .goods-week__field--grey,
-.goods-week__price--grey {
+.goods-week__item--grey,
+.goods-week__price--grey,
+.goods-week__title--green,
+.goods-week__value--grey {
   color: @textgrey;
 }
 
 .goods-week__link {
-    .text-button;
+  .text-button;
+}
+
+@media (min-width: @size-tablet) {
+  .goods-week {
+    min-height: 613px;
+  }
+}
+
+@media (min-width: @size-desktop) {
+  .goods-week {
+    min-height: 786px;
+  }
 }

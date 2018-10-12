@@ -1,10 +1,12 @@
 .goods-menu {
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
   .indentzero;
 }
 
 .goods-menu__item {
-  .indentauto
+  height: 103px;
 }
 
 .goods-menu__link {
@@ -26,3 +28,24 @@
 .goods-menu__item--green2 {
   background-color: @secondary-block-color;
 }
+
+@media (min-width: @size-tablet) {
+  .goods-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .goods-menu__item {
+    width: 334px;
+    min-height: 131px;
+    margin-top: -118px;
+  }
+}
+/*@media (min-width: @size-desktop) {
+  .goods-menu {
+    display: flex;
+    flex-direction: row;
+  }
+}
+*/

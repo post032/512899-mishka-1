@@ -1,14 +1,33 @@
 .about-us {
-  .indentm
+  .indentm;
+  min-height: 830px;
+//  display: flex;
 }
 
 .about-us__title {
   .titlefont;
 }
 
+.about-us__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
 .about-us__item {
   font-size: 17px;
   line-height: 20px;
   font-weight: 700;
-  list-style-type: none;
+}
+
+@media (min-width: @size-tablet) {
+  .about-us {
+    min-height: 639px;
+  }
+}
+
+@media (min-width: @size-desktop) {
+  .about-us {
+    min-height: 663px;
+  }
 }

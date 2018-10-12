@@ -2,7 +2,7 @@ body {
   min-width: 320px;
   font-size: 15px;
   line-height: 30px;
-  font-family: "open sans", Arial, sans-serif;
+  font-family: "open sans", "Arial", sans-serif;
   color: #000000;
   font-style: normal;
   background-color: @basic-color;
@@ -27,4 +27,18 @@ input[type="radio"].visually-hidden {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+@font-face {
+  font-family: "open sans";
+  src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "open sans";
+  src: url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff");
+  font-style: bold;
+  font-weight: bold;
 }

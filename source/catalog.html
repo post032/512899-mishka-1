@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Мишка</title>
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
@@ -48,26 +49,34 @@
   <main class="page-main">
     <section class="catalog">
       <div class="catalog__header">
-      <h1 class="catalog__title">Каталог товаров</h1>
-    </div>
-      <div class="catalog__item">
-        <img src="bunny.jpg" alt="Зайчик">
-        <h3 class="catalog__name">Зайчик-попрыгайчик</h3>
-        <p class="catalog__option">Рост 30 см, вес 200 г</p>
-        <p class="catalog__price">1 200 руб.</p>
+        <h1 class="catalog__title">Каталог товаров</h1>
       </div>
-      <div class="catalog__item">
-        <img src="basket.jpg" alt="Корзинка для белья">
-        <h3 class="catalog__name">Корзинка для белья</h3>
-        <p class="catalog__option catalog__option--grey">Диаметр 15 см, высота 10 см</p>
-        <p class="catalog__price">690 руб.</p>
-      </div>
-      <div class="catalog__item">
-        <img src="toybasket.jpg" alt="Большая корзинка для игрушек">
-        <h3 class="catalog__name">Большая корзинка для игрушек</h3>
-        <p class="catalog__option">Диаметр 30 см, высота 30 см</p>
-        <p class="catalog__price">1 500 руб.</p>
-      </div>
+      <ul class="catalog__list">
+        <li class="catalog__item">
+          <img src="bunny.jpg" alt="Зайчик">
+          <div>
+            <h3 class="catalog__name">Зайчик-попрыгайчик</h3>
+            <p class="catalog__option">Рост 30 см, вес 200 г</p>
+            <p class="catalog__price">1 200 руб.</p>
+          </div>
+        </li>
+        <li class="catalog__item">
+          <img src="basket.jpg" alt="Корзинка для белья">
+          <div>
+            <h3 class="catalog__name">Корзинка для белья</h3>
+            <p class="catalog__option catalog__option--grey">Диаметр 15 см, высота 10 см</p>
+            <p class="catalog__price">690 руб.</p>
+          </div>
+        </li>
+        <li class="catalog__item">
+          <img src="toybasket.jpg" alt="Большая корзинка для игрушек">
+          <div>
+            <h3 class="catalog__name">Большая корзинка для игрушек</h3>
+            <p class="catalog__option">Диаметр 30 см, высота 30 см</p>
+            <p class="catalog__price">1 500 руб.</p>
+          </div>
+        </li>
+      </ul>
     </section>
     <section class="backstage">
       <h2 class="backstage__title">Процесс производства</h2>
@@ -76,47 +85,51 @@
       <a class="backstage__link backstage__link--black" href="form.html">Сделать заказ</a>
     </section>
   </main>
-    <footer class="page-footer">
-      <section class="page-footer__social social">
-        <h2 class="visually-hidden">Социальные сети</h2>
-        <ul>
-          <li class="social__item">
-            <a href="#">instagram</a>
+  <footer class="page-footer">
+    <a class="page-footer__logo">
+      <span class="visually-hidden">Логотип Мишка</span>
+      </a>
+    <section class="page-footer__social social">
+      <h2 class="visually-hidden">Социальные сети</h2>
+      <ul class="social__list">
+        <li class="social__item">
+          <a href="#">instagram</a>
+        </li>
+        <li class="social__item">
+          <a href="#">facebook</a>
+        </li>
+        <li class="social__item">
+          <a href="#">twitter</a>
+        </li>
+      </ul>
+    </section>
+    <section class="page-footer__copyright copyright">
+      <h2 class="visually-hidden">разработчики</h2>
+      <p class="copyright__item">Разработано
+        <img src="htmlacademy.svg" alt="Академия HTML">
+      </p>
+    </section>
+  </footer>
+  <div class="modal">
+    <form class="" action="https://echo.htmlacademy.ru" method="get">
+      <div class="modal__form">
+        <h2 class="modal__title">Добавить в корзину</h2>
+        <p class="modal__item modal__item--grey">Выберите размер:</p>
+        <ul class="modal__size">
+          <li class="modal__element">
+            <button class="modal__button modal__button--grey" type="button" name="button">S</button>
           </li>
-          <li class="social__item">
-            <a href="#">facebook</a>
+          <li class="modal__element">
+            <button class="modal__button modal__button--grey" type="button" name="button">M</button>
           </li>
-          <li class="social__item">
-            <a href="#">twitter</a>
+          <li class="modal__element">
+            <button class="modal__button modal__button--grey" type="button" name="button">L</button>
           </li>
         </ul>
-      </section>
-      <section class="page-footer__copyright copyright">
-        <h2 class="visually-hidden">разработчики</h2>
-        <p class="copyright__item">Разработано</p>
-        <img src="htmlacademy.svg" alt="Академия HTML">
-      </section>
-    </footer>
-    <div class="modal">
-      <form class="" action="https://echo.htmlacademy.ru" method="get">
-        <div class="modal__form">
-          <h2 class="modal__title">Добавить в корзину</h2>
-          <p class="modal__item modal__item--grey">Выберите размер:</p>
-          <ul class="modal__size">
-            <li>
-              <button class="modal__button modal__button--grey" type="button" name="button">S</button>
-            </li>
-            <li>
-              <button class="modal__button modal__button--grey" type="button" name="button">M</button>
-            </li>
-            <li>
-              <button class="modal__button modal__button--grey" type="button" name="button">L</button>
-            </li>
-          </ul>
-          <a class="modal__add modal__add--white" href="form.html">Добавить</a>
-        </div>
-      </form>
-    </div>
-  </body>
+        <a class="modal__add modal__add--white" href="form.html">Добавить</a>
+      </div>
+    </form>
+  </div>
+</body>
 
-  </html>
+</html>
