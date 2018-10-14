@@ -1,4 +1,6 @@
 body {
+  padding: 0;
+  margin: 0 auto;
   min-width: 320px;
   font-size: 15px;
   line-height: 30px;
@@ -6,12 +8,36 @@ body {
   color: #000000;
   font-style: normal;
   background-color: @basic-color;
-  .indentauto;
 }
 
 img {
   width: 100%;
   height: auto;
+}
+
+.container {
+  padding: 0;
+  margin: 0 auto;
+  width: 320px;
+  position: relative;
+}
+
+@media (min-width: @size-tablet) {
+  .container {
+    padding: 0;
+    margin: 0 auto;
+    width: 768px;
+    position: relative;
+  }
+}
+
+@media (min-width: @size-desktop) {
+  .container {
+    padding: 0;
+    margin: 0 auto;
+    width: 1160px;
+    position: relative;
+  }
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -28,14 +54,12 @@ input[type="radio"].visually-hidden {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
 @font-face {
   font-family: "open sans";
   src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
   font-style: normal;
   font-weight: normal;
 }
-
 @font-face {
   font-family: "open sans";
   src: url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff");

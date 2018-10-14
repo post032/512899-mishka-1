@@ -3,23 +3,45 @@
   margin-right: 30px;
   height: 316px;
 }
+
 .main-nav__list {
-  margin: 0;
-  padding: 0;
   display: flex;
   flex-direction: column;
-  margin: 0;
-}
+  .indentzero;
 
-@media (min-width: @size-tablet) {
-.main-nav {
-  display: flex;
-  margin: 0;
-  padding: 0;
-  height: 150px;
-  }
-.main-nav__list {
-  display: flex;
-  flex-direction: row;
 }
+@media (min-width: @size-tablet) {
+  .main-nav {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 150px;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__list {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .site-list__item {
+    margin-right: 35px;
+  }
+
+  .main-nav--position .main-nav__list:first-child {
+    display: flex;
+    position: relative;
+    top: 113px;
+    left: -140px;
+    z-index: 2;
+  }
+
+  .main-nav--position .main-nav__list:last-child {
+    display: flex;
+    position: relative;
+    right: -80px;
+  }
 }
