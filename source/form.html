@@ -26,9 +26,10 @@
     </g>
   </svg>
   </a>
-    <nav class="main-nav">
+    <nav class="main-nav container">
       <button class="main-nav__toggle main-nav__toggle--close" type="button">Открыть меню</button>
-      <div class="main-nav__wrapper">
+      <div class="main-nav__wrapper main-nav--position">
+        <div class="main-nav__first">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a class="site-list__link" href="catalog.html">Каталог товаров</a>
@@ -36,6 +37,18 @@
           <li class="site-list__item">
             <a class="site-list__link" href="#">Вязание на заказ</a>
           </li>
+        </ul>
+          <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link" href="catalog.html">Новые поступления</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Распродажа</a>
+          </li>
+        </ul>
+      </div>
+      <div class="main-nav__second">
+        <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a class="site-list__link" href="#">Поиск по сайту</a>
           </li>
@@ -43,6 +56,9 @@
             <a class="site-list__link" href="#">Корзина: пока пуста</a>
           </li>
         </ul>
+            <p class="site-list__delivery">Бесплатная доставка по России</p>
+        </ul>
+      </div>
       </div>
     </nav>
   </header>
