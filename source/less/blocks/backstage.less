@@ -1,6 +1,7 @@
 
 .backstage {
-  .indentm;
+  box-sizing: border-box;
+  min-height: 561px;
 }
 
 .backstage__title {
@@ -26,3 +27,15 @@
 .backstage__link--black {
   color: @textblack;
 }
+
+@media (min-width: @size-tablet) {
+  .backstage {
+  min-height: 806px;
+}
+}
+
+@media (min-width: @size-desktop) {
+  .backstage {
+  min-height: 560px;
+}
+  }

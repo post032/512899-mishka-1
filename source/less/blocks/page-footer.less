@@ -1,6 +1,16 @@
 .page-footer {
-  .indentm;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0 auto;
+  position: relative;
   background-color: @grey;
+  display: flex;
+  flex-direction: column;
+  min-height: 160px;
+}
+
+.page-footer__logo {
+  display: none;
 }
 
 .copyright__item {
@@ -9,27 +19,21 @@
   font-weight: 700;
 }
 
-/*
-.page-footer {
-  background-color: @grey;
-}
-// сетка
-.page-footer {
-  display: flex;
-  flex-direction: column;
-}
-
-
 @media (min-width: @size-tablet) {
-.page-footer {
-display: flex;
+  .page-footer {
+    min-height: 143px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .page-footer__logo {
+    display: inline-block;
   }
 }
 
-
-@media (min-width: @size-descktop) {
-.page-footer {
-display: flex;
+@media (min-width: @size-desktop) {
+  .page-footer {
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }
-*/

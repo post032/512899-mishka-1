@@ -1,5 +1,19 @@
 .modal {
-  .indentm
+  box-sizing: border-box;
+  background-color: #ffffff;
+  background-size: 100%;
+  opacity: 0.9;
+}
+
+.modal__form {
+  box-sizing: border-box;
+  min-height: 336px;
+  width: 320px;
+  //position: absolute;
+  //top: 1046px;
+  //transform: translateX(-50%);
+  //left: 50%;
+  .indentm;
 }
 
 .modal__title {
@@ -23,4 +37,33 @@
 
 .modal__add--white {
   color: @textwhite;
+}
+
+.modal__size {
+  .indentzero;
+  display: flex;
+}
+
+.modal__element {
+  list-style-type: none;
+}
+
+@media (min-width: @size-tablet) {
+  .modal__form {
+    min-height: 336px;
+    width: 566px;
+    //position: absolute;
+    //top: 1532px;
+    //transform: translateX(-50%);
+    //left: 50%;
+  }
+}
+
+@media (min-width: @size-desktop) {
+  .modal__form {
+    //position: absolute;
+    //top: 1114px;
+    //  transform: translateX(-50%);
+    //  left: 50%;
+  }
 }

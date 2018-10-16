@@ -1,16 +1,36 @@
-.filters-box {
-  .indentm;
+.form {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-.filters-box__list {
-  list-style-type: none;
+
+.form-header {
+  min-height: 177px;
+  background-color: @grey;
+  height: 177px;
+  margin: 0;
 }
 
 .form__title {
-  background-color: @grey;
-  height: 177px;
+  margin: 0;
 }
 
-.form-option {
+.filters-box {
+  min-height: 1628px;
+  .indentm;
+}
+
+.filters-box__list {
+  list-style-type: none;
+  .indentzero;
+}
+
+.filters-box__cell {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__option {
   font-size: 13px;
   line-height: 24px;
   .indentm;
@@ -29,4 +49,19 @@
   font-size: 17px;
   line-height: 18px;
   font-weight: 700;
+}
+
+@media (min-width: @size-tablet) {
+  .filters-box {
+    min-height: 1628px;
+  }
+}
+
+@media (min-width: @size-desktop) {
+  .filters-box {
+    min-height: 1518px;
+  }
+  .form-header {
+    min-height: 255px;
+  }
 }

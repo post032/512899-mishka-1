@@ -1,5 +1,7 @@
 .comments {
-  .indentm;
+  box-sizing: border-box;
+  //display: flex;
+  //flex-direction: column;
 }
 .commets__title {
   .titlefont;
@@ -17,4 +19,17 @@
 .comments__text--grey,
 .comments__author--grey,{
   color: @textgrey;
+}
+
+@media (min-width: @size-tablet) {
+  .comments {
+    min-height: 542px;
+    background: url("../img/review@1x.jpg") no-repeat top left;
+  }
+}
+
+@media (min-width: @size-desktop) {
+  .comments {
+    min-height: 547px;
+  }
 }
