@@ -1,9 +1,11 @@
 .about-us {
   box-sizing: border-box;
+  .indentm;
 }
 
 .about-us__title {
   .titlefont;
+  margin-top: 33px;
 }
 
 .about-us__list {
@@ -13,18 +15,115 @@
 }
 
 .about-us__item {
+  margin-top: 34px;
+  text-decoration: none;
   font-size: 17px;
   line-height: 20px;
   font-weight: 700;
 }
 
-// @media (min-width: @size-tablet) {
-//   .about-us {
-//   }
-// }
-//
-// @media (min-width: @size-desktop) {
-//   .about-us {
-//
-//   }
-// }
+.about-us__lists {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-us__icon--flower::before {
+  content: "";
+  display: block;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: auto;
+  height: 38px;
+  background: url("../img/icon-feature-flower.svg") no-repeat left top;
+}
+
+.about-us__icon--money::before {
+  content: "";
+  display: block;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: auto;
+  height: 38px;
+  background: url("../img/icon-feature-money.svg") no-repeat left top;
+}
+
+.about-us__icon--heart::before {
+  content: "";
+  display: block;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: auto;
+  height: 38px;
+  background: url("../img/icon-feature-heart.svg") no-repeat left top;
+}
+
+.about-us__icon--boll::before {
+  content: "";
+  display: block;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: auto;
+  height: 38px;
+  background: url("../img/icon-feature-ball.svg") no-repeat left top;
+}
+
+.about-us__icon--rocket::before {
+  content: "";
+  display: block;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: auto;
+  height: 38px;
+  background: url("../img/icon-feature-rocket.svg") no-repeat left top;
+}
+
+.about-us__icon--gift::before {
+  content: "";
+  display: block;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: auto;
+  height: 38px;
+  background: url("../img/icon-feature-gift.svg") no-repeat left top;
+}
+@media (min-width: @size-tablet) {
+  .about-us__lists {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .about-us__item {
+    margin-top: 34px;
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .about-us__title {
+    font-size: 53px;
+    line-height: 50px;
+  }
+}
+@media (min-width: @size-desktop) {
+  .about-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-us__lists,
+  .about-us__title {
+    width: 700px;
+  }
+}

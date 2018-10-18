@@ -1,17 +1,22 @@
 .page-header {
   box-sizing: border-box;
+}
+.page-header__logo {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  height: 79px;
 }
 
-.page-header__logo {
-  box-sizing: border-box;
+.page-header__logo img {
+  width: 92px;
+  height: 40px;
 }
 
 @media (min-width: @size-tablet) {
   .page-header {
-    display: flex;
-    flex-direction: row;
+    box-sizing: border-box;
     min-height: 89px;
     padding-left: 50px;
     padding-right: 50px;
@@ -23,6 +28,11 @@
     top: 20%;
     left: 30%;
   }
+
+  .page-header__logo img {
+    width: 113px;
+    height: 46px;
+  }
 }
 
 @media (min-width: @size-desktop) {
@@ -31,5 +41,10 @@
     transform: translateX(-50%);
     top: 20%;
     left: 50%;
+  }
+
+  .page-header__logo img {
+    width: 149px;
+    height: 72px;
   }
 }

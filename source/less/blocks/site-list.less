@@ -13,38 +13,97 @@
   flex-direction: column;
 }
 
-.site-list__delivery {
-  display: none;
+.site-list {
+  font-weight: bold;
+  list-style-type: none;
 }
 
-.main-nav__first .site-list:nth-child(2) {
-  display: none;
+
+.site-list__icon {
+  position: relative;
+  top: 0;
+  right: 24px;
+  width: 20px;
+  height: 20px;
+  opacity: 0.2;
+
+  polygon {
+    fill: @coloricon;
+  }
+
+  .site-list__icon:focus,
+  .site-list__icon:hover {
+    fill: #63d1bb;
+  }
+
+  .site-list__icon:active {
+    opacity: 0.3;
+    fill: #63d1bb;
+  }
 }
 
-.site-list__item {
-  display: flex;
+.site-list__link {
+  display: block;
+  padding-left: 76px;
+  padding-bottom: 34px;
+  padding-top: 33px;
+  text-decoration: none;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  color: @textblack;
+  background-color: #ffffff;
+  border-top: 1px solid @border;
 }
+
+.site-list a[href] {
+  &:hover {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+// .site-list__item:nth-child(5),
+//  .site-list__item:nth-child(6) {
+//   display: none;
+// }
 @media (min-width: @size-tablet) {
-  .site-list:first-child .site-list__link {
-    font-size: 15px;
-  }
 
-  .site-list__delivery {
-    .indentzero;
-    display: flex;
-    justify-content: flex-end;
-    font-size: 15px;
-    line-height: 24px;
-    font-weight: 400;
-  }
-}
-@media (min-width: @size-desktop) {
-  .site-list:first-child .site-list__link {
+  .site-list__link {
     font-size: 17px;
+    line-height: 24px;
+    font-weight: 700;
+    width: 167px;
+
+  }
+  .site-list__none {
+    display: none;
   }
 
-  .main-nav__first .site-list:nth-child(2) {
+}
+//
+//   // .site-list:first-child .site-list__link {
+//   //   font-size: 15px;
+//   // }
+//
+//   .site-list__item--icon::after {
+//     content: "";
+//     display: block;
+//     position: relative;
+//     bottom: 0;
+//     left: 0;
+//     right: 0;
+//     width: auto;
+//     height: 25px;
+//     background: url("../img/icon-search.svg") no-repeat top center;
+//   }
+// }
+@media (min-width: @size-desktop) {
+  .site-list__item:nth-child(5),
+   .site-list__item:nth-child(6) {
     display: flex;
   }
-
 }
