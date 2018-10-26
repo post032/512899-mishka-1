@@ -3,7 +3,6 @@
 .main-nav {
   box-sizing: border-box;
   position: relative;
-  width: 320px;
   margin: 0 auto;
   background-color: #ffffff;
 }
@@ -69,9 +68,6 @@
   }
 }
 
-.main-nav__list:nth-child(2) {
-  display: none;
-}
 @media (max-width: @mobile-width-only) {
   .main-nav--closed .site-list__item {
     display: none;
@@ -87,11 +83,12 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  .indentzero;
+   .indentzero;
 }
-// .main-nav__wrapper {
-//   box-sizing: border-box;
-// }
+.main-nav__wrapper {
+  box-sizing: border-box;
+}
+
 @media (min-width: @size-tablet) {
   .main-nav__toggle {
     display: none;
@@ -100,17 +97,15 @@
   .main-nav__list {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    // flex-wrap: wrap;
-    // width: 668px;
-  }
-
-  .main-nav--position {
-    box-sizing: border-box;
+    justify-content: flex-end;
+    .indentzero;
   }
 }
+
 @media (min-width: @size-desktop) {
-  .main-nav__list:nth-child(2) {
+  .main-nav__list {
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
 }

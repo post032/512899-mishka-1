@@ -5,7 +5,8 @@
 
 .about-us__title {
   .titlefont;
-  margin-top: 33px;
+  margin-top: 29px;
+  margin-bottom: 3px;
 }
 
 .about-us__list {
@@ -15,7 +16,7 @@
 }
 
 .about-us__item {
-  margin-top: 34px;
+  margin-top: 45px;
   text-decoration: none;
   font-size: 17px;
   line-height: 20px;
@@ -32,7 +33,8 @@
   display: block;
   position: relative;
   bottom: 0;
-  left: 0;
+  top: -15px;
+  left: 7px;
   right: 0;
   width: auto;
   height: 38px;
@@ -44,6 +46,7 @@
   display: block;
   position: relative;
   bottom: 0;
+  top: -15px;
   left: 0;
   right: 0;
   width: auto;
@@ -56,7 +59,8 @@
   display: block;
   position: relative;
   bottom: 0;
-  left: 0;
+  top: -11px;
+  left: 7px;
   right: 0;
   width: auto;
   height: 38px;
@@ -68,7 +72,8 @@
   display: block;
   position: relative;
   bottom: 0;
-  left: 0;
+  top: -12px;
+  left: 3px;
   right: 0;
   width: auto;
   height: 38px;
@@ -80,8 +85,8 @@
   display: block;
   position: relative;
   bottom: 0;
-  left: 0;
-  right: 0;
+  top: -13px;
+  left: -7px;
   width: auto;
   height: 38px;
   background: url("../img/icon-feature-rocket.svg") no-repeat left top;
@@ -92,29 +97,47 @@
   display: block;
   position: relative;
   bottom: 0;
-  left: 0;
+  top: -14px;
+  left: 2px;
   right: 0;
   width: auto;
   height: 38px;
   background: url("../img/icon-feature-gift.svg") no-repeat left top;
 }
+
 @media (min-width: @size-tablet) {
+  .about-us {
+    padding-left: 44px;
+    padding-right: 50px;
+  }
+
   .about-us__lists {
     flex-direction: row;
+    justify-content: space-between;
+    width: 626px;
+    margin-left: 5px;
+  }
+
+  .about-us__list {
+    height: 460px;
+    display: flex;
+    flex-direction: column;
     justify-content: space-around;
   }
 
   .about-us__item {
-    margin-top: 34px;
+    margin-top: 57px;
     font-size: 20px;
     line-height: 22px;
   }
 
   .about-us__title {
-    font-size: 53px;
+    font-size: 43px;
     line-height: 50px;
+    margin-top: 46px;
   }
 }
+
 @media (min-width: @size-desktop) {
   .about-us {
     display: flex;
@@ -124,6 +147,13 @@
 
   .about-us__lists,
   .about-us__title {
-    width: 700px;
+    width: 640px;
+    margin-right: 50px;
+  }
+
+  .about-us__title {
+    font-size: 53px;
+    line-height: 57px;
+    margin-top: 63px;
   }
 }

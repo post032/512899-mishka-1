@@ -9,6 +9,9 @@
   background-color: @grey;
   height: 177px;
   margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .form__title {
@@ -33,7 +36,8 @@
 .form__option {
   font-size: 13px;
   line-height: 24px;
-  .indentm;
+  // .indenzero;
+  // white-space: 260px;
 }
 
 .filters-box__lable {
@@ -51,6 +55,29 @@
   font-weight: 700;
 }
 
+.filters-box__goods {
+  display: flex;
+  flex-direction: column;
+}
+
+.filters-box__button {
+  .border-button-mob;
+}
+
+.filters-box__field {
+  border: 2px solid #000000;
+}
+
+.filters-box__name {
+  border-bottom: 2px solid #000000;
+  height: 91px;
+}
+
+.filters-box__contact {
+  border-bottom: 2px solid #000000;
+  height: 91px;
+}
+
 @media (min-width: @size-tablet) {
   .filters-box {
     min-height: 1628px;
@@ -61,6 +88,7 @@
   .filters-box {
     min-height: 1518px;
   }
+
   .form-header {
     min-height: 255px;
   }

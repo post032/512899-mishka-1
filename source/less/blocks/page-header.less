@@ -1,19 +1,20 @@
 .page-header {
   box-sizing: border-box;
 }
+
 .page-header__logo {
   display: flex;
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
   height: 79px;
+  padding-top: 10px;
 }
 
-.page-header__logo img {
-  width: 92px;
-  height: 40px;
-}
-
+// .page-header__logo img {
+//   width: 92px;
+//   height: 40px;
+// }
 @media (min-width: @size-tablet) {
   .page-header {
     box-sizing: border-box;
@@ -24,22 +25,25 @@
 
   .page-header__logo {
     position: absolute;
-    transform: translateX(-50%);
-    top: 20%;
-    left: 30%;
+    z-index: 2;
+    top: 10px;
+    left: 50px;
   }
 
   .page-header__logo img {
     width: 113px;
     height: 46px;
   }
-}
 
+  .page-header {
+    display: flex;
+    align-items: center;
+  }
+}
 @media (min-width: @size-desktop) {
   .page-header__logo {
     position: absolute;
     transform: translateX(-50%);
-    top: 20%;
     left: 50%;
   }
 
