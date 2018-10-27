@@ -92,12 +92,14 @@
 .backstage__link--black {
   color: @textblack;
 }
+
 @media (min-width: @size-tablet) {
   .backstage__info {
     width: 668px;
     margin-top: 50px;
     margin-bottom: 65px;
     display: flex;
+    flex-direction: column;
   }
 
   .backstage__image {
@@ -119,11 +121,6 @@
     margin-bottom: 17px;
     display: flex;
     justify-content: flex-start;
-  }
-
-  .backstage__info {
-    display: flex;
-    flex-direction: column;
   }
 
   .backstage__option {
@@ -166,14 +163,20 @@
     background: url("../img/icon-play.svg") no-repeat top center;
   }
 }
+
 @media (min-width: @size-desktop) {
+  .backstage {
+    padding-top: 5px;
+    margin-bottom: 105px;
+  }
+
   .backstage__info {
     width: 1050px;
     height: 455px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
   }
 
   .backstage__image {
@@ -190,5 +193,37 @@
     width: 231px;
     padding-left: 0;
     margin-left: 0;
+    margin-right: 31px;
+  }
+
+  .backstage__title {
+    margin-top: 98px;
+  }
+
+  .backstage__link {
+    margin-top: 10px;
+  }
+
+  .backstage__title::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 44px;
+    left: 761px;
+    width: 30px;
+    height: 27px;
+    background: url("../img/icon-video.svg") no-repeat top center;
+  }
+
+  .backstage__title::after {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 2;
+    top: 190px;
+    left: 290px;
+    width: 102px;
+    height: 77px;
+    background: url("../img/icon-play.svg") no-repeat top center;
   }
 }
