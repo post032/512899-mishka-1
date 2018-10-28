@@ -41,29 +41,31 @@
   align-items: center;
 }
 
+.site-list__link:hover,
+.site-list__link:focus {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.site-list__link:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .site-list__icon {
   width: auto;
   height: 19px;
   opacity: 0.2;
-
-  polygon {
-    fill: @coloricon;
-  }
+  fill: @coloricon;
 }
 
 .site-list__icon:focus,
 .site-list__icon:hover {
-  polygon {
+    opacity: 1;
     fill: #63d1bb;
-  }
 }
 
 .site-list__icon:active {
   opacity: 0.3;
-
-  polygon {
-    fill: #63d1bb;
-  }
+  fill: #63d1bb;
 }
 //icon
 @media (min-width: @size-tablet) {

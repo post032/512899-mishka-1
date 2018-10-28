@@ -7,6 +7,15 @@
   .indentm;
 }
 
+.comments__button:hover,
+.comments__button:focus {
+  opacity: 0.6;
+}
+
+.comments__button:active {
+  opacity: 0.3;
+}
+
 .commets__title {
   margin: 0;
   .titlefont;
@@ -34,6 +43,15 @@
   .border-button-mob;
 }
 
+.comments__link:hover,
+.comments__link:focus {
+  .button-hover;
+}
+
+.comments__link:active {
+  .button-active;
+}
+
 .comments__author--grey,
 .comments__text--grey {
   color: @textgrey;
@@ -46,6 +64,7 @@
 }
 
 .comments__button {
+  outline: none;
   width: 130px;
   height: 51px;
   border: 1px solid @border;

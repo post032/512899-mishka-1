@@ -95,6 +95,39 @@
   align-items: center;
 }
 
+.catalog__icon-one {
+  position: absolute;
+  top: 354px;
+  left: 243px;
+}
+
+.catalog__icon-two {
+  position: absolute;
+  top: 760px;
+  left: 243px;
+}
+
+.catalog__icon-three {
+  position: absolute;
+  top: 1191px;
+  left: 243px;
+}
+
+.catalog__icon {
+  opacity: 0.2;
+}
+
+.catalog__icon:focus,
+.catalog__icon:hover {
+  fill: #46c1ae;
+  opacity: 1;
+}
+
+.catalog__icon:active {
+  fill: #46c1ae;
+  opacity: 0.3;
+}
+
 @media (min-width: @size-tablet) {
   .catalog__header {
     min-height: 226px;
@@ -150,7 +183,7 @@
     content: "";
     display: block;
     position: absolute;
-    bottom: 254px;
+    bottom: 204px;
     left: 0;
     right: 0;
     height: 34px;
@@ -188,6 +221,24 @@
     position: relative;
     bottom: 57px;
     left: 218px;
+  }
+
+  .catalog__icon-one {
+    position: absolute;
+    top: 284px;
+    left: 664px;
+  }
+
+  .catalog__icon-two {
+    position: absolute;
+    top: 670px;
+    left: 664px;
+  }
+
+  .catalog__icon-three {
+    position: absolute;
+    top: 1061px;
+    left: 664px;
   }
 }
 
@@ -273,5 +324,23 @@
 
   .catalog__option {
     padding: 0;
+  }
+
+  .catalog__icon-one {
+    position: absolute;
+    top: 609px;
+    left: 265px;
+  }
+
+  .catalog__icon-two {
+    position: absolute;
+    top: 609px;
+    left: 630px;
+  }
+
+  .catalog__icon-three {
+    position: absolute;
+    top: 609px;
+    left: 999px;
   }
 }

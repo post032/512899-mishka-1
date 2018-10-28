@@ -65,9 +65,27 @@
 }
 
 .goods-week__link {
+  background-color: #ffffff;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: @borderbutton 2px solid;
+  width: 260px;
+  height: 52px;
   .text-button;
-  .border-button-mob;
 }
+
+.goods-week__link:hover,
+.goods-week__link:focus {
+  background-color: #444444;
+  color: #ffffff;
+}
+
+  .goods-week__link:active {
+    background-color: #444444;
+    color: rgba(255, 255, 255, 0.3);
+  }
 
 .goods-week__list {
   border-collapse: collapse;
@@ -149,7 +167,13 @@
   }
 
   .goods-week__link {
-    .border-button-tab;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: @borderbutton 2px solid;
+    width: 290px;
+    height: 52px;
     margin-left: 50px;
   }
 
