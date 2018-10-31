@@ -2,7 +2,7 @@
 
 .main-nav {
   box-sizing: border-box;
-  position: relative;
+  // position: relative;
   margin: 0 auto;
   background-color: #ffffff;
 }
@@ -83,6 +83,7 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  border-bottom: 2px solid @border;
   .indentzero;
 }
 
@@ -105,6 +106,7 @@
 
 @media (min-width: @size-desktop) {
   .main-nav__list {
+    width: 1150px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
