@@ -16,10 +16,10 @@
   align-items: center;
   box-shadow: 0 2px 2px 0 #000000;
   position: absolute;
-  // z-index: 2;
-  // top: 1046px;
-  // transform: translateX(-50%);
-  // left: 50%;
+  z-index: 2;
+  top: 1046px;
+  transform: translateX(-50%);
+  left: 50%;
 }
 
 .modal__button {
@@ -92,21 +92,22 @@
 .modal__element {
   list-style-type: none;
 }
+
 @media (min-width: @size-tablet) {
   .modal__form {
     min-height: 336px;
     width: 566px;
-    //position: absolute;
-    //top: 1532px;
-    //transform: translateX(-50%);
-    //left: 50%;
+    position: absolute;
+    top: 1532px;
+    transform: translateX(-50%);
+    left: 50%;
   }
 }
 @media (min-width: @size-desktop) {
   .modal__form {
-    //position: absolute;
-    //top: 1114px;
-    //  transform: translateX(-50%);
-    //  left: 50%;
+    position: absolute;
+    top: -50%;
+     transform: translateX(-50%);
+     left: 50%;
   }
 }

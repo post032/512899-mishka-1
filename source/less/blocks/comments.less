@@ -1,15 +1,23 @@
 .comments {
   box-sizing: border-box;
   display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.comments__basis {
+  width: 320px;
+  box-sizing: border-box;
+  display: flex;
   flex-direction: column;
+  align-items: center;
   margin-top: 37px;
   margin-bottom: 15px;
   position: relative;
-  .indentm;
 }
 
-.comments__button:hover,
-.comments__button:focus {
+.comments__button:focus,
+.comments__button:hover {
   opacity: 0.6;
 }
 
@@ -17,35 +25,40 @@
   opacity: 0.3;
 }
 
-.commets__title {
-  margin: 0;
-  .titlefont;
+.comments__title {
+  width: 260px;
+  margin-top: 18px;
+  margin-bottom: 24px;
+  font-size: 25px;
+  line-height: 30px;
 }
 
 .comments__text {
   margin-top: 0;
-  padding-top: 3px;
+  .indentm;
 }
 
 .comments__author {
   font-size: 17px;
   line-height: 30px;
   margin-top: 10px;
+  padding-right: 22px;
 }
 
-.comments__author--bold {
+.comments__bold {
   font-weight: bold;
 }
 
 .comments__link {
-  .text-button;
-  margin-top: 10px;
+  margin-top: 9px;
   margin-bottom: 50px;
+  .text-button;
   .border-button-mob;
+  .indentm;
 }
 
-.comments__link:hover,
-.comments__link:focus {
+.comments__link:focus,
+.comments__link:hover {
   .button-hover;
 }
 
@@ -62,6 +75,7 @@
   margin-top: 11px;
   margin-bottom: 30px;
   display: flex;
+  .indentm;
 }
 
 .comments__button {
@@ -70,11 +84,11 @@
   height: 51px;
   border: 1px solid @border;
   background-color: #ffffff;
-  padding-left: 1px;
+  padding-left: 2px;
   padding-top: 7px;
 }
 
-.comments::after {
+.comments__basis::after {
   content: "";
   display: block;
   position: absolute;
@@ -86,34 +100,43 @@
   background: url("../img/bg-zigzag-line.svg") no-repeat top center;
   background-size: cover;
 }
-
 @media (min-width: @size-tablet) {
   .comments {
+    display: flex;
+    justify-content: center;
+  }
+
+  .comments__basis {
     min-height: 542px;
+    width: 768px;
     background: url("../img/review@1x.jpg") no-repeat top left;
     margin-top: 77px;
     display: flex;
   }
 
+  .comments__text br {
+    display: none;
+  }
+
   .comments__title {
     font-size: 43px;
     line-height: 50px;
-    margin-top: 78px;
-    margin-left: 14px;
+    margin-top: 77px;
+    width: 679px;
   }
 
   .comments__text {
-    width: 650px;
     font-size: 17px;
     line-height: 30px;
-    margin-left: 18px;
+    width: 668px;
+    margin-top: 26px;
   }
 
   .comments__author {
     font-size: 17px;
-    width: 350px;
-    padding-left: 148px;
-    margin-top: 20px;
+    width: 668px;
+    margin-top: 35px;
+    margin-left: 20px;
   }
 
   .comments__author--bold {
@@ -122,9 +145,10 @@
   }
 
   .comments__option {
-    position: absolute;
-    top: 344px;
-    right: 50px;
+    position: relative;
+    top: -81px;
+    left: 249px;
+    padding: 0;
   }
 
   .comments__button {
@@ -146,7 +170,7 @@
     right: 50px;
   }
 
-  .comments::after {
+  .comments__basis::after {
     content: "";
     display: block;
     position: absolute;
@@ -155,30 +179,32 @@
     right: 0;
     height: 17px;
     background: url("../img/bg-zigzag-line.svg") no-repeat top center;
-    background-size: contain;
+    background-size: cover;
   }
 }
-
 @media (min-width: @size-desktop) {
-  .comments {
+  .comments__basis {
+    margin-top: 84px;
     height: 457px;
     background: url("../img/review@1x.jpg") no-repeat;
-    top: 5px;
-    left: 55px;
+    margin-left: 55px;
+    margin-right: 55px;
+    width: 1050px;
+    margin-bottom: 0;
   }
 
   .comments__text {
     width: 770px;
     font-size: 17px;
     line-height: 30px;
-    margin-left: 145px;
+    margin-left: 70px;
   }
 
   .comments__title {
     font-size: 53px;
     line-height: 57px;
-    margin-left: 140px;
-    margin-top: 72px;
+    margin-left: 62px;
+    margin-top: 70px;
   }
 
   .comments__link {
@@ -193,26 +219,35 @@
   }
 
   .comments__option {
-    position: absolute;
-    top: 295px;
-    right: 110px;
+    position: relative;
+    top: -84px;
+    left: 440px;
   }
 
   .comments__author--bold {
     font-size: 17px;
     font-weight: bold;
-    margin-left: 20px;
   }
 
-  .comments::after {
+  .comments__author {
+    margin-top: 19px;
+    margin-right: 28px;
+  }
+
+  .comments__link {
+    right: 0;
+  }
+
+  .comments__basis::after {
     content: "";
     display: block;
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    height: 23px;
+    height: 21px;
     background: url("../img/bg-zigzag-line.svg") no-repeat top center;
-    background-size: cover;
+    background-size: contain;
+    transform: rotate(180deg);
   }
 }

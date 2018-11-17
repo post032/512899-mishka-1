@@ -12,12 +12,15 @@
   margin-top: 30px;
   margin-bottom: 58px;
 }
-// .backstage__info {
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   border: 1px solid @border;
-// }
+
+.backstage__info:hover,
+.backstage__info:focus {
+  box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.backstage__info:active {
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+}
 
 .backstage__title {
   font-size: 17px;
@@ -26,8 +29,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 90px;
-  margin-top: 18px;
+  margin-left: 118px;
+  margin-top: 20px;
   margin-bottom: 25px;
 }
 
@@ -101,6 +104,8 @@
   font-size: 17px;
   text-transform: uppercase;
   line-height: 16px;
+  font-weight: bold;
+  color: #444444;
   text-decoration: none;
   box-sizing: border-box;
   display: flex;
@@ -148,8 +153,9 @@
     font-size: 20px;
     line-height: 24px;
     width: 300px;
-    margin-top: 30px;
-    margin-left: 105px;
+    margin-top: 39px;
+    margin-left: 0;
+    margin-right: 154px;
     margin-bottom: 17px;
     display: flex;
     justify-content: flex-start;
@@ -198,24 +204,29 @@
 
 @media (min-width: @size-desktop) {
   .backstage {
-    padding-top: 5px;
     margin-bottom: 105px;
+    padding-top: 4px;
+    margin-left: 3px;
   }
 
   .backstage__info {
     width: 1050px;
-    height: 455px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: flex-start;
+    align-items: flex-end;
+  }
+
+  .backstage__option {
+    margin-right: 36px;
   }
 
   .backstage__image {
     width: 683px;
     height: 455px;
-    position: relative;
-    right: 30px;
+    position: absolute;
+    left: 0;
     top: 0;
   }
 
@@ -224,16 +235,18 @@
   .backstage__title {
     width: 231px;
     padding-left: 0;
+    padding-right: 0;
     margin-left: 0;
-    margin-right: 31px;
+    margin-right: 56px;
   }
 
   .backstage__title {
-    margin-top: 98px;
+    margin-top: 96px;
   }
 
   .backstage__link {
     margin-top: 10px;
+    margin-bottom: 62px;
   }
 
   .backstage__title::before {

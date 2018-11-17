@@ -2,10 +2,11 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
-.contacts__border:hover,
-.contacts__border:focus {
+.contacts__border:focus,
+.contacts__border:hover {
   color: #46c1ae;
 }
 
@@ -17,8 +18,9 @@
 .contacts__title {
   font-size: 18px;
   line-height: 30px;
-  padding-top: 6px;
-  padding-left: 30px;
+  padding-top: 7px;
+  padding-left: 28px;
+  margin-bottom: 14px;
 }
 
 .contacts__address {
@@ -29,7 +31,7 @@
   flex-direction: column;
   text-decoration: none;
   list-style-type: none;
-  padding-left: 30px;
+  padding-left: 29px;
   margin: 0;
 }
 
@@ -47,11 +49,6 @@
 
 .contacts__value {
   width: 60px;
-
-  // justify-content: flex-start;
-  // display: flex;
-  // margin-top: 10px;
-  // width: 77px;
   .indentzero;
 }
 
@@ -65,17 +62,12 @@
 
 .contacts__field {
   width: 200px;
-  // padding-top: 15px;
+  padding-left: 17px;
 }
 
 .contacts__field:nth-child(2) {
   width: 150px;
-  padding-left: 15px;
 }
-
-// .contacts__info {
-//   .indentm;
-// }
 
 .contacts__map::before {
   content: "";
@@ -93,7 +85,7 @@
   box-sizing: border-box;
   height: 457px;
   width: 320px;
-  margin-top: 54px;
+  margin-top: 55px;
 }
 
 .contacts__link {
@@ -103,8 +95,8 @@
   margin-bottom: 40px;
 }
 
-.contacts__link:hover,
-.contacts__link:focus {
+.contacts__link:focus,
+.contacts__link:hover {
   .button-hover;
 }
 
@@ -121,41 +113,49 @@
   .contacts__title {
     font-size: 43px;
     line-height: 50px;
-    margin-top: 40px;
-    margin-left: 15px;
+    margin-top: 39px;
+    margin-left: 17px;
+    margin-bottom: 35px;
   }
 
   .contacts__address {
     flex-direction: row;
     height: 160px;
+    width: 668px;
   }
 
   .contacts__list {
     display: flex;
+    width: 334px;
+    padding: 0;
   }
 
   .contacts__list:first-child {
     margin-top: 14px;
-    margin-left: 18px;
+    margin-left: 20px;
   }
 
   .contacts__list:last-child {
     margin-top: 14px;
-    margin-right: 55px;
-    margin-left: 55px;
+    margin-left: 5px;
   }
 
   .contacts__field,
   .contacts__value {
     font-size: 17px;
     line-height: 30px;
+    padding: 0;
+  }
+
+  .contacts__value {
+    width: 78px;
   }
 
   .contacts__info::before {
     content: "";
     display: block;
     position: absolute;
-    top: 32px;
+    top: 31px;
     left: 665px;
     right: 0;
     width: 53px;
@@ -177,8 +177,8 @@
     content: "";
     display: block;
     position: absolute;
-    top: 138px;
-    left: 360px;
+    top: 430px;
+    left: 362px;
     right: 0;
     width: 67px;
     height: 93px;
@@ -188,17 +188,21 @@
   .contacts__link {
     width: 230px;
     height: 52px;
-    margin-top: 54px;
+    margin-top: 55px;
     margin-bottom: 57px;
   }
 }
 
 @media (min-width: @size-desktop) {
+  .contacts__info {
+    width: 1050px;
+  }
+
   .contacts__info::before {
     content: "";
     display: block;
     position: absolute;
-    top: 126px;
+    top: 138px;
     left: 115px;
     right: 0;
     width: 53px;
@@ -209,23 +213,21 @@
   .contacts__title {
     font-size: 53px;
     line-height: 57px;
-    margin-top: 130px;
-    margin-left: 190px;
+    margin-top: 139px;
+    margin-left: 140px;
+    margin-bottom: 43px;
   }
 
   .contacts__map {
     width: 525px;
     height: 457px;
     position: absolute;
-    top: 65px;
-    right: 55px;
+    top: 76px;
+    right: 56px;
     margin: 0;
     padding: 0;
   }
-  // .contacts__call {
-  //   display: flex;
-  //   justify-content: space-around;
-  // }
+
   .contacts__address .contacts__list {
     margin: 0;
     width: 350px;
@@ -236,9 +238,8 @@
     box-sizing: border-box;
     width: 460px;
     height: 175px;
-    margin-left: 196px;
-    padding-top: 5px;
-    // height: 160px;
+    margin-left: 145px;
+    padding-top: 6px;
   }
 
   .contacts__map::before {
@@ -257,13 +258,11 @@
     width: 230px;
     height: 52px;
     margin-top: 59px;
-    margin-left: 200px;
+    margin-left: 175px;
     margin-bottom: 105px;
   }
 
   .contacts__list:last-child {
     margin-top: 30px;
-    // margin-right: 55px;
-    margin-left: 5px;
   }
 }
