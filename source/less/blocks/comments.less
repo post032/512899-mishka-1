@@ -112,6 +112,11 @@
     background: url("../img/review@1x.jpg") no-repeat top left;
     margin-top: 77px;
     display: flex;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background: url("../img/review@2x.jpg") no-repeat top left;
+    background-size: auto 455px;
+  }
   }
 
   .comments__text br {
@@ -191,6 +196,11 @@
     margin-right: 55px;
     width: 1050px;
     margin-bottom: 0;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background: url("../img/review@2x.jpg") no-repeat top left;
+    background-size: auto 455px;
+  }
   }
 
   .comments__text {
@@ -203,7 +213,7 @@
   .comments__title {
     font-size: 53px;
     line-height: 57px;
-    margin-left: 62px;
+    margin-right: 20px;
     margin-top: 70px;
   }
 
@@ -221,7 +231,7 @@
   .comments__option {
     position: relative;
     top: -84px;
-    left: 440px;
+    left: 444px;
   }
 
   .comments__author--bold {
@@ -235,7 +245,7 @@
   }
 
   .comments__link {
-    right: 0;
+    right: -9px;
   }
 
   .comments__basis::after {
