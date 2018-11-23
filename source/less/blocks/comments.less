@@ -104,6 +104,7 @@
   background: url("../img/bg-zigzag-line.svg") no-repeat top center;
   background-size: cover;
 }
+
 @media (min-width: @size-tablet) {
   .comments {
     display: flex;
@@ -118,9 +119,9 @@
     display: flex;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-    background: url("../img/review@2x.jpg") no-repeat top left;
-    background-size: auto 455px;
-  }
+      background: url("../img/review@2x.jpg") no-repeat top left;
+      background-size: auto 455px;
+    }
   }
 
   .comments__text br {
@@ -191,6 +192,7 @@
     background-size: cover;
   }
 }
+
 @media (min-width: @size-desktop) {
   .comments__basis {
     margin-top: 84px;
@@ -202,9 +204,9 @@
     margin-bottom: 0;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-    background: url("../img/review@2x.jpg") no-repeat top left;
-    background-size: auto 455px;
-  }
+      background: url("../img/review@2x.jpg") no-repeat top left;
+      background-size: auto 455px;
+    }
   }
 
   .comments__text {
@@ -229,7 +231,7 @@
     height: 52px;
     position: absolute;
     top: 70px;
-    right: 110px;
+    right: -9px;
   }
 
   .comments__option {
@@ -246,10 +248,6 @@
   .comments__author {
     margin-top: 19px;
     margin-right: 28px;
-  }
-
-  .comments__link {
-    right: -9px;
   }
 
   .comments__basis::after {

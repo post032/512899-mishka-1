@@ -68,7 +68,6 @@
   align-items: flex-start;
   padding-top: 8px;
   min-height: 52px;
-
 }
 
 .filters-box__item--size {
@@ -261,7 +260,6 @@
   margin-bottom: 10px;
   margin-top: 8px;
 }
-
 // .filters-box__lable--profile {
 //   margin-top: 13px;
 //   margin-bottom: 0;
@@ -334,6 +332,7 @@
   padding-left: 61px;
   top: 0;
   left: 2px;
+  cursor: pointer;
 }
 
 .filters-box__radio + label::before {
@@ -350,10 +349,6 @@
 
 .filters-box__radio:checked + label::after {
   opacity: 1;
-}
-
-.filters-box__radio + label {
-  cursor: pointer;
 }
 
 .filters-box__radio + label::after {
@@ -382,9 +377,6 @@
   position: relative;
   top: 0;
   left: 2px;
-}
-
-.filters-box__checkbox + label {
   cursor: pointer;
 }
 
@@ -447,7 +439,7 @@
   }
 
   .filters-box__item {
-    margin-top: 6px;
+    // margin-top: 6px;
     font-size: 19px;
     line-height: 18px;
     font-weight: 700;
@@ -458,12 +450,15 @@
     width: 359px;
   }
 
-    .filters-box__input {
-      margin-top: 0;
-    }
+  .filters-box__input {
+    margin-top: 0;
+    display: flex;
+    flex-grow: 1;
+  }
 
   .filters-box__circle {
     min-height: 75px;
+    margin-top: 0;
   }
 
   .filters-box__types {
@@ -536,14 +531,6 @@
     width: 234px;
   }
 
-  .filters-box__circle {
-    margin-top: 0;
-  }
-
-  .filters-box__lable--colors {
-    // margin-top: 39px;
-  }
-
   .filters-box__profile {
     display: flex;
     align-content: center;
@@ -572,11 +559,6 @@
   .filters-box__item--name {
     padding-top: 11px;
     margin-right: 25px;
-  }
-
-  .filters-box__input {
-    display: flex;
-    flex-grow: 1;
   }
 
   .filters-box__input[placeholder] {
@@ -649,11 +631,9 @@
     top: 16px;
     padding-left: 614px;
   }
-
   // .filters-box__lable--profile {
   //   margin-top: 68px;
   // }
-
   .filters-box__names {
     // padding-top: 54px;
     margin-top: 0;
@@ -742,9 +722,6 @@
     padding-left: 82px;
     top: 0;
     left: 2px;
-  }
-
-  .filters-box__radio + label {
     cursor: pointer;
   }
 
@@ -810,14 +787,10 @@
     clip: rect(0 0 0 0);
   }
 
-  .filters-box__checkbox:not(checked) + label {
+  .filters-box__checkbox + label {
     position: relative;
-    // padding: 15px 0 0 86px;
     top: 0;
     left: -3px;
-  }
-
-  .filters-box__checkbox + label {
     cursor: pointer;
   }
 
