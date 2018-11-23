@@ -241,28 +241,28 @@
   </footer>
 
   <section class="modal">
-    <div class="modal__background">
-      <div class="container">
         <form class="modal__position" action="https://echo.htmlacademy.ru" method="get">
           <div class="modal__form">
             <h2 class="modal__title">Добавить в корзину</h2>
             <p class="modal__item modal__item--grey">Выберите размер:</p>
             <ul class="modal__size">
               <li class="modal__element">
-                <input class="modal__button modal__button--grey" type="button" name="button1" value="S">
+                <input id="s" class="modal__checkbox" type="checkbox" name="button1" value="S" checked>
+                <label for="s" class="modal__button" name="s" value="S">S</label>
               </li>
               <li class="modal__element">
-                <input class="modal__button modal__button--grey" type="button" name="button2" value="M">
+                <input id="m" class="modal__checkbox" type="checkbox" name="button2" value="M">
+                <label for="m" class="modal__button" name="m" value="M">M</label>
               </li>
               <li class="modal__element">
-                <input class="modal__button modal__button--grey" type="button" name="button3" value="L">
+                <input id="l" class="modal__checkbox" type="checkbox" name="button3" value="L">
+                <label for="l" class="modal__button" name="l" value="L">L</label>
               </li>
             </ul>
             <input type="submit" class="modal__add modal__add--white" href="form.html" value="Добавить">
           </div>
       </div>
       </form>
-    </div>
   </section>
   <script src="js/script.js"></script>
 </body>
