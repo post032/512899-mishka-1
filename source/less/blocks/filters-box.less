@@ -23,7 +23,10 @@
 
 .filters-box__option {
   width: 260px;
-  margin-top: 3px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .filters-box__lable {
@@ -34,7 +37,6 @@
   text-transform: uppercase;
   display: flex;
   align-items: center;
-  // margin-top: 10px;
 }
 
 .filters-box__lable--line::after {
@@ -64,15 +66,19 @@
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  min-height: 29px;
+  padding-top: 8px;
+  min-height: 52px;
+
 }
 
-.filters-box__item--type {
-  min-height: 53px;
+.filters-box__item--size {
+  width: 260px;
 }
 
 .filters-box__circle {
-  margin-top: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .filters-box__color {
@@ -80,12 +86,15 @@
   line-height: 18px;
   font-weight: 700;
   display: flex;
-  min-height: 55px;
-  margin-top: 6px;
+  padding-top: 15px;
+  min-height: 45px;
+  width: 260px;
+  padding-left: 61px;
 }
 
 .filters-box__cub {
   width: 260px;
+  min-height: 61px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -155,8 +164,8 @@
 .filters-box__field {
   border: 2px solid #000000;
   width: 228px;
-  min-height: 108px;
-  padding: 15px;
+  height: 110px;
+  padding: 14px;
   outline: none;
 }
 
@@ -197,8 +206,8 @@
   outline: none;
 }
 
-.filters-box__nexus[placeholder]:hover,
-.filters-box__nexus[placeholder]:focus {
+.filters-box__nexus[placeholder]:focus,
+.filters-box__nexus[placeholder]:hover {
   border-bottom: 2px solid #62d1ba;
 }
 
@@ -224,16 +233,16 @@
   fill: rgba(68, 68, 68, 0.3);
   position: absolute;
   left: 0;
-  top: 69px;
-  padding-left: 227px;
+  top: 42px;
+  padding-left: 229px;
 }
 
 .filters-box__mail {
   fill: rgba(68, 68, 68, 0.3);
   position: absolute;
   left: 0;
-  top: 67px;
-  padding-left: 224px;
+  top: 40px;
+  padding-left: 225px;
 }
 
 .filters-box__mail:focus,
@@ -249,14 +258,14 @@
 }
 
 .filters-box__lable--contact {
-  padding-top: 20px;
   margin-bottom: 10px;
+  margin-top: 8px;
 }
 
-.filters-box__lable--profile {
-  margin-top: 13px;
-  margin-bottom: 0;
-}
+// .filters-box__lable--profile {
+//   margin-top: 13px;
+//   margin-bottom: 0;
+// }
 
 .filters-box__input {
   width: 260px;
@@ -285,27 +294,29 @@
   font-weight: 400;
   padding-left: 0;
   padding-bottom: 10px;
-  min-height: 28px;
+  margin-top: 10px;
 }
 
 .filters-box__names {
-  margin-top: 2px;
+  margin-top: 13px;
 }
 
 .filters-box__item--name {
-  padding-top: 25px;
+  padding-top: 0;
+  min-height: 20px;
 }
 
 .filters-box__profile {
-  min-height: 300px;
+  // min-height: 300px;
 }
 
 .filters-box__add {
-  margin-top: 16px;
+  // margin-top: 16px;
 }
 
 .filters-box__lable--add {
   margin-bottom: 25px;
+  margin-top: 4px;
 }
 //checkbox
 /////////////////////////////////////radio////////////////////////////////////////
@@ -318,37 +329,37 @@
   clip: rect(0 0 0 0);
 }
 
-.filters-box__radio:not(checked) + label {
+.filters-box__radio + label {
   position: relative;
   padding-left: 61px;
-  top: 6px;
+  top: 0;
   left: 2px;
 }
 
-.filters-box__radio + label {
-  cursor: pointer;
-}
-
-.filters-box__radio:not(checked) + label::before {
+.filters-box__radio + label::before {
   content: "";
   position: absolute;
-  top: -7px;
+  top: 0;
   left: 0;
   width: 35px;
   height: 35px;
   border: 1px solid #000000;
   border-radius: 50%;
-  background: #ffffff;
+  // background: #ffffff;
 }
 
 .filters-box__radio:checked + label::after {
   opacity: 1;
 }
 
-.filters-box__radio:not(checked) + label::after {
+.filters-box__radio + label {
+  cursor: pointer;
+}
+
+.filters-box__radio + label::after {
   content: "";
   position: absolute;
-  top: 4px;
+  top: 11px;
   left: 11px;
   width: 15px;
   height: 15px;
@@ -359,10 +370,6 @@
 }
 ////////////////////////////////////////////////////////////////////////////////
 
-.filters-box__filter {
-  margin-top: 7px;
-}
-
 .filters-box__filters input {
   position: absolute;
   width: 1px;
@@ -371,10 +378,9 @@
   clip: rect(0 0 0 0);
 }
 
-.filters-box__checkbox:not(checked) + label {
+.filters-box__checkbox + label {
   position: relative;
-  padding: 0 100px 0 61px;
-  top: 6px;
+  top: 0;
   left: 2px;
 }
 
@@ -382,10 +388,10 @@
   cursor: pointer;
 }
 
-.filters-box__checkbox:not(checked) + label::before {
+.filters-box__checkbox + label::before {
   content: "";
   position: absolute;
-  top: -9px;
+  top: 3px;
   left: 0;
   width: 35px;
   height: 35px;
@@ -397,10 +403,10 @@
   opacity: 1;
 }
 
-.filters-box__checkbox:not(checked) + label::after {
+.filters-box__checkbox + label::after {
   content: "";
   position: absolute;
-  bottom: 35px;
+  bottom: 26px;
   left: 2px;
   width: 25px;
   height: 25px;
@@ -441,12 +447,27 @@
   }
 
   .filters-box__item {
+    margin-top: 6px;
     font-size: 19px;
     line-height: 18px;
     font-weight: 700;
+    margin-top: 0;
+  }
+
+  .filters-box__item--size {
+    width: 359px;
+  }
+
+    .filters-box__input {
+      margin-top: 0;
+    }
+
+  .filters-box__circle {
+    min-height: 75px;
   }
 
   .filters-box__types {
+    min-height: 185px;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -466,18 +487,19 @@
   }
 
   .filters-box__option {
-    width: 500px;
-    padding-top: 7px;
+    width: 560px;
+    min-height: 180px;
+    margin: 0;
+    justify-content: flex-start;
   }
 
   .filters-box__colors {
     background-color: @grey;
-    margin-top: 39px;
-    padding-top: 29px;
+    padding-top: 48px;
     display: flex;
     justify-content: center;
     align-content: center;
-    padding-bottom: 41px;
+    padding-bottom: 24px;
   }
 
   .filters-box__filters {
@@ -489,7 +511,7 @@
   }
 
   .filters-box__filter {
-    margin-top: 30px;
+    // margin-top: 30px;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -502,6 +524,8 @@
     line-height: 18px;
     font-weight: 700;
     width: 150px;
+    padding-left: 86px;
+    min-height: 62px;
   }
 
   .filters-box__cub:nth-child(2n) {
@@ -517,7 +541,7 @@
   }
 
   .filters-box__lable--colors {
-    margin-top: 39px;
+    // margin-top: 39px;
   }
 
   .filters-box__profile {
@@ -531,6 +555,8 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
+    padding-top: 49px;
+    padding-bottom: 23px;
   }
 
   .filters-box__name {
@@ -561,6 +587,7 @@
     font-weight: 400;
     padding-bottom: 7px;
     padding-left: 17px;
+    margin-top: 6px;
   }
 
   .filters-box__contacts {
@@ -623,12 +650,12 @@
     padding-left: 614px;
   }
 
-  .filters-box__lable--profile {
-    margin-top: 68px;
-  }
+  // .filters-box__lable--profile {
+  //   margin-top: 68px;
+  // }
 
   .filters-box__names {
-    padding-top: 54px;
+    // padding-top: 54px;
     margin-top: 0;
   }
 
@@ -710,12 +737,10 @@
     clip: rect(0 0 0 0);
   }
 
-  .filters-box__radio:not(checked) + label {
+  .filters-box__radio + label {
     position: relative;
     padding-left: 82px;
-    padding-right: 100px;
-    padding-bottom: 24px;
-    top: 6px;
+    top: 0;
     left: 2px;
   }
 
@@ -723,10 +748,10 @@
     cursor: pointer;
   }
 
-  .filters-box__radio:not(checked) + label::before {
+  .filters-box__radio + label::before {
     content: "";
     position: absolute;
-    top: -15px;
+    top: -7px;
     left: 0;
     width: 52px;
     height: 52px;
@@ -739,10 +764,10 @@
     opacity: 1;
   }
 
-  .filters-box__radio:not(checked) + label::after {
+  .filters-box__radio + label::after {
     content: "";
     position: absolute;
-    top: 2px;
+    top: 9px;
     left: 16px;
     width: 20px;
     height: 20px;
@@ -787,8 +812,8 @@
 
   .filters-box__checkbox:not(checked) + label {
     position: relative;
-    padding: 15px 0 0 86px;
-    top: -14px;
+    // padding: 15px 0 0 86px;
+    top: 0;
     left: -3px;
   }
 
@@ -796,10 +821,10 @@
     cursor: pointer;
   }
 
-  .filters-box__checkbox:not(checked) + label::before {
+  .filters-box__checkbox + label::before {
     content: "";
     position: absolute;
-    top: -2px;
+    top: 1px;
     left: 5px;
     width: 52px;
     height: 52px;
@@ -807,11 +832,11 @@
     background: #ffffff;
   }
 
-  .filters-box__checkbox:focus:not(:checked) + label::before,
-  .filters-box__checkbox:hover:not(:checked) + label::before {
+  .filters-box__checkbox:focus + label::before,
+  .filters-box__checkbox:hover + label::before {
     content: "";
     position: absolute;
-    top: -2px;
+    top: 1px;
     left: 5px;
     width: 52px;
     height: 52px;
@@ -819,10 +844,10 @@
     background: #ffffff;
   }
 
-  .filters-box__checkbox:active:not(:checked) + label::before {
+  .filters-box__checkbox:active + label::before {
     content: "";
     position: absolute;
-    top: -2px;
+    top: 1px;
     left: 5px;
     width: 52px;
     height: 52px;
@@ -834,10 +859,10 @@
     opacity: 1;
   }
 
-  .filters-box__checkbox:not(checked) + label::after {
+  .filters-box__checkbox + label::after {
     content: "";
     position: absolute;
-    bottom: 32px;
+    bottom: 36px;
     left: 16px;
     width: 30px;
     height: 25px;
@@ -847,6 +872,7 @@
   }
   ///////////////////////////////////////////////////////////////////////////////
 }
+
 @media (min-width: @size-desktop) {
   .filters-box {
     box-sizing: border-box;
@@ -854,6 +880,7 @@
 
   .filters-box__option {
     width: 810px;
+    align-items: flex-start;
   }
 
   .filters-box__types {
@@ -883,26 +910,24 @@
     min-height: 128px;
     margin-top: 0;
     display: flex;
-    padding-top: 30px;
-    padding-bottom: 40px;
   }
 
   .filters-box__color {
     font-size: 19px;
     line-height: 18px;
     font-weight: 700;
-    padding: 0;
+    padding-left: 87px;
     width: 176px;
   }
 
   .filters-box__lable--colors {
-    padding-top: 38px;
-    margin: 0;
+    // padding-top: 38px;
+    // margin: 0;
     padding-left: 63px;
   }
 
   .filters-box__colors {
-    padding-bottom: 0;
+    padding-bottom: 22px;
   }
 
   .filters-box__cub {
@@ -919,7 +944,9 @@
     display: flex;
   }
 
-  .filters-box__lable--profile {}
+  .filters-box__item--name {
+    padding-top: 16px;
+  }
 
   .filters-box__names {
     margin-right: 104px;
@@ -932,16 +959,17 @@
 
   .filters-box__link {
     width: 1050px;
+    padding-bottom: 34px;
+  }
+
+  .filters-box__contacts {
+    margin-top: 5px;
   }
 
   .filters-box__contact {
     min-height: 74px;
     width: 917px;
     margin: 0;
-  }
-
-  .filters-box__contacts {
-    margin-top: 3px;
   }
 
   .filters-box__phone {
